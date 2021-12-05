@@ -15,7 +15,7 @@ const bridgeEth = new web3Eth.eth.Contract(
 
 const bridgeAvax = new web3Avax.eth.Contract(
   BridgeAvax.abi,
-  BridgeAvax.networks['4002'].address
+  BridgeAvax.networks['1'].address
 );
 
 totalStackGas = BigInt(0);
