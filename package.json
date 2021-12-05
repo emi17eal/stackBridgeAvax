@@ -23,7 +23,7 @@
     "@openzeppelin/contracts": "^4.4.0",
     "@truffle/hdwallet-provider": "^2.0.0",
     "@uniswap/sdk": "^3.0.3",
-    "ether": "^0.0.9",
+    "ethers": "^5.5.2",
     "web3": "^1.6.1"
   },
   "devDependencies": {
