@@ -3,8 +3,8 @@ const { ChainId, Fetcher, WETH, Route} = require('@uniswap/sdk');
 const BridgeEth = require('../build/contracts/BridgeEth.json');
 const BridgeAvax = require('../build/contracts/BridgeAvax.json');
 
-const web3Eth = new Web3("wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/eth/rinkeby/ws");
-const web3Avax = new Web3('wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/avalanche/testnet/ws');
+const web3Eth = new Web3("wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/eth/mainnet/ws");
+const web3Avax = new Web3('wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/avalanche/mainnet/ws');
 
 const { address: admin } = web3Eth.eth.accounts.wallet.add(process.env.admin_privateKey);
 
