@@ -77,6 +77,25 @@
        skipDryRun: true,
        websocket: true
      },
+     EthMainnet: {
+      networkCheckTimeout: 10000,
+      provider: () => new HDWalletProvider(
+        mnemonic, 
+        'wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/eth/mainnet/ws',
+      ),
+      network_id: 1, 
+      skipDryRun: true,
+      websocket: true
+    },
+    AvaxMainnet: {
+      networkCheckTimeout: 10000,
+      provider: () => new HDWalletProvider(
+        mnemonic, 
+        'wss://speedy-nodes-nyc.moralis.io/c7275baa0c4699224afc74c0/avalanche/mainnet/ws'
+      ),
+      network_id: 1,
+      skipDryRun: true
+    },
      BscTestnet: {
        networkCheckTimeout: 10000,
        provider: () => new HDWalletProvider(

@@ -12,8 +12,8 @@ contract BridgeAvax is Ownable {
   uint public minimumBurn;
   bool public paused;
   mapping(uint => bool) public processedNonces;
-  mapping(address => bool) bridged;
-  address [] bridgers;
+  mapping(address => bool) public bridged;
+  address [] public bridgers;
   
 
   enum Step { burn, mint }
