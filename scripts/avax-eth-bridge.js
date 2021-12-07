@@ -14,7 +14,7 @@ const stackaddress = '0x1bbb57def2f6192f0b9b8565f49034bf1fcdb604';
 
 const bridgeEth = new web3Eth.eth.Contract(
   BridgeEth.abi,
-  BridgeEth.networks['4'].address
+  BridgeEth.networks['1'].address
 );
 
 const bridgeAvax = new web3Avax.eth.Contract(

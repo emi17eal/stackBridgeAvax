@@ -10,7 +10,7 @@ const { address: admin } = web3Avax.eth.accounts.wallet.add(process.env.admin_pr
 
 const bridgeEth = new web3Eth.eth.Contract(
   BridgeEth.abi,
-  BridgeEth.networks['4'].address
+  BridgeEth.networks['1'].address
 );
 
 const bridgeAvax = new web3Avax.eth.Contract(
