@@ -28,7 +28,7 @@ bridgeEth.events.Transfer({
   try {
     const { from, to, amount, date, nonce } = event.returnValues;
     console.log(`nonce: ${nonce}`);
-    const gasInStack = BigInt(1000000000000000000);
+    const gasInStack = BigInt(0);
     const newAmount = BigInt(amount) - gasInStack;
     const tx = bridgeAvax.methods.mint(from, newAmount, nonce);
     const [gasPrice, gasCost] = await Promise.all([
